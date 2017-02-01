@@ -1,0 +1,8 @@
+<import src="../starts/start-template.wxml" />
+<template name="movieTemplate">
+    <view class="movie-container" catchtap="onMovieTap" data-movieId="{{movieId}}">
+        <image class="movie-img" src="{{coverUrl}}"></image>
+        <text class="movie-title">{{title}}</text>
+        <template is="startTemplate" data="{{star:stars,score:average}}" />
+    </view>
+</template>
